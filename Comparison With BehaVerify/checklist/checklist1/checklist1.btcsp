@@ -1,0 +1,8 @@
+safetycheck0 = safetycheck0_s->Success [] safetycheck0_f->Fail;
+backup0 = backup0_s->Success [] backup0_f->Fail [] backup0_r->Running;
+F0 = safetycheck0|>backup0;
+
+BehaviorTree= Loop.(F0); 
+
+#assert BehaviorTree  |=  G( safetycheck0_f-> X (backup0_r || backup0_f || backup0_s)  );
+#assert BehaviorTree  |=  G( safetycheck0_f-> ! X  (backup0_r || backup0_f || backup0_s)  );

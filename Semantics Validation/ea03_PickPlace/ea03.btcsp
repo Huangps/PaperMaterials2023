@@ -1,0 +1,20 @@
+﻿var c_p=0;
+var r_p=0;
+Picked = [c_p==1]Picked_s->Success [] [  c_p==0 || c_p==2 ]Picked_f->Fail;
+
+AtA = [r_p==1]AtA_s->Success [] [ r_p==0||r_p==2 ]AtA_f->Fail;
+
+GoToA = GoToA_s{r_p=1}->Success [] GoToA_f->Fail [] GoToA_r->Running;
+
+PickUp = PickUp_s{c_p=1}->Success [] PickUp_f->Fail [] PickUp_r->Running;
+
+Placed = [c_p==2]Placed_s->Success [] [  c_p==0 || c_p== 1 ]Placed_f->Fail;
+
+AtB = [r_p==2]AtB_s->Success [] [  r_p==0||r_p==1 ]AtB_f->Fail;
+
+GotoB = GotoB_s{r_p =2}->Success [] GotoB_f->Fail [] GotoB_r->Running;
+
+Place = Place_s{c_p=2}->Success [] Place_f->Fail [] Place_r->Running;
+
+BehaviorTree= (Picked|>((AtA|>GoToA);PickUp));(Placed|>((AtB|>GotoB);Place));
+

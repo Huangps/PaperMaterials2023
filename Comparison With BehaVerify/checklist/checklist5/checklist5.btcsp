@@ -1,0 +1,39 @@
+safetycheck0 = safetycheck0_s->Success [] safetycheck0_f->Fail;
+backup0 = backup0_s->Success [] backup0_f->Fail [] backup0_r->Running;
+safetycheck1 = safetycheck1_s->Success [] safetycheck1_f->Fail;
+backup1 = backup1_s->Success [] backup1_f->Fail [] backup1_r->Running;
+safetycheck2 = safetycheck2_s->Success [] safetycheck2_f->Fail;
+backup2 = backup2_s->Success [] backup2_f->Fail [] backup2_r->Running;
+safetycheck3 = safetycheck3_s->Success [] safetycheck3_f->Fail;
+backup3 = backup3_s->Success [] backup3_f->Fail [] backup3_r->Running;
+safetycheck4 = safetycheck4_s->Success [] safetycheck4_f->Fail;
+backup4 = backup4_s->Success [] backup4_f->Fail [] backup4_r->Running;
+
+
+F0 = safetycheck0|>backup0;
+F1 = safetycheck1|>backup1;
+F2 = safetycheck2|>backup2;
+F3 = safetycheck3|>backup3;
+F4 = safetycheck4|>backup4;
+
+S1 = F2;F3;
+S2 = F4;S0;
+S0 = F0;F1;
+S3 = S1;S2;
+
+BehaviorTree= Loop.(S3); 
+
+
+
+#assert BehaviorTree |= G(safetycheck0_f->  X(backup0_r || backup0_f || backup0_s));
+#assert BehaviorTree |= G(safetycheck0_f->  !X(backup0_r || backup0_f || backup0_s));
+#assert BehaviorTree |= G(safetycheck1_f -> X(backup1_r || backup1_f || backup1_s));
+#assert BehaviorTree |= G(safetycheck1_f -> !X(backup1_r || backup1_f || backup1_s));
+#assert BehaviorTree |= G(safetycheck2_f -> X(backup2_r || backup2_f || backup2_s));
+#assert BehaviorTree |= G(safetycheck2_f -> !X(backup2_r || backup2_f || backup2_s));
+#assert BehaviorTree |= G(safetycheck3_f -> X(backup3_r || backup3_f || backup3_s));
+#assert BehaviorTree |= G(safetycheck3_f -> !X(backup3_r || backup3_f || backup3_s));
+#assert BehaviorTree |= G(safetycheck4_f -> X(backup4_r || backup4_f || backup4_s));
+#assert BehaviorTree |= G(safetycheck4_f -> !X(backup4_r || backup4_f || backup4_s));
+
+

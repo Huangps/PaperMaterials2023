@@ -1,0 +1,124 @@
+Source State: [0] -----init-----> Target State: [1] 
+Target State: The process is:
+BehaviorTree()
+51
+
+The environment is:
+Variables:
+r_p=0;
+c_p=0;
+
+
+
+Source State: [1] -----Picked_f-----> Target State: [2] 
+Target State: The process is:
+Fail|>AtA()|>GoToA();
+PickUp();
+Placed()|>AtB()|>GotoB();
+Place()
+53
+
+The environment is:
+Variables:
+r_p=0;
+c_p=0;
+
+
+
+Source State: [2] -----AtA_f-----> Target State: [3] 
+Target State: The process is:
+Fail|>GoToA();
+PickUp();
+Placed()|>AtB()|>GotoB();
+Place()
+56
+
+The environment is:
+Variables:
+r_p=0;
+c_p=0;
+
+
+
+Source State: [3] -----GoToA_s-----> Target State: [4] 
+Target State: The process is:
+Success;
+PickUp();
+Placed()|>AtB()|>GotoB();
+Place()
+59
+
+The environment is:
+Variables:
+r_p=1;
+c_p=0;
+
+
+
+Source State: [4] -----PickUp_s-----> Target State: [5] 
+Target State: The process is:
+Success;
+Placed()|>AtB()|>GotoB();
+Place()
+49
+
+The environment is:
+Variables:
+r_p=1;
+c_p=1;
+
+
+
+Source State: [5] -----Placed_f-----> Target State: [6] 
+Target State: The process is:
+Fail|>AtB()|>GotoB();
+Place()
+67
+
+The environment is:
+Variables:
+r_p=1;
+c_p=1;
+
+
+
+Source State: [6] -----AtB_f-----> Target State: [7] 
+Target State: The process is:
+Fail|>GotoB();
+Place()
+69
+
+The environment is:
+Variables:
+r_p=1;
+c_p=1;
+
+
+
+Source State: [7] -----GotoB_f-----> Target State: [8] 
+Target State: The process is:
+Fail;
+Place()
+70
+
+The environment is:
+Variables:
+r_p=1;
+c_p=1;
+
+
+
+Source State: [8] -----⚡-----> Target State: [9] 
+Target State: The process is:
+Stop;
+Place()
+72
+
+The environment is:
+Variables:
+r_p=1;
+c_p=1;
+
+
+
+

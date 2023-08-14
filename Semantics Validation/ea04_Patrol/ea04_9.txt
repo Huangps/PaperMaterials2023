@@ -1,0 +1,95 @@
+Source State: [0] -----init-----> Target State: [1] 
+Target State: The process is:
+BehaviorTree()
+38
+
+The environment is:
+Variables:
+rp=0;
+
+
+
+Source State: [1] -----AtA_f-----> Target State: [2] 
+Target State: The process is:
+Fail|>GoToA();
+AtB()|>GoToB();
+AtC()|>GoToC()
+41
+
+The environment is:
+Variables:
+rp=0;
+
+
+
+Source State: [2] -----GoToA_s-----> Target State: [3] 
+Target State: The process is:
+Success;
+AtB()|>GoToB();
+AtC()|>GoToC()
+44
+
+The environment is:
+Variables:
+rp=1;
+
+
+
+Source State: [3] -----AtB_f-----> Target State: [4] 
+Target State: The process is:
+Fail|>GoToB();
+AtC()|>GoToC()
+50
+
+The environment is:
+Variables:
+rp=1;
+
+
+
+Source State: [4] -----GoToB_s-----> Target State: [5] 
+Target State: The process is:
+Success;
+AtC()|>GoToC()
+36
+
+The environment is:
+Variables:
+rp=2;
+
+
+
+Source State: [5] -----AtC_f-----> Target State: [6] 
+Target State: The process is:
+Fail|>GoToC()
+54
+
+The environment is:
+Variables:
+rp=2;
+
+
+
+Source State: [6] -----GoToC_r-----> Target State: [7] 
+Target State: The process is:
+Running
+‣
+
+The environment is:
+Variables:
+rp=2;
+
+
+
+Source State: [7] -----‣-----> Target State: [8] 
+Target State: The process is:
+Stop
+STOP
+
+The environment is:
+Variables:
+rp=2;
+
+
+
+

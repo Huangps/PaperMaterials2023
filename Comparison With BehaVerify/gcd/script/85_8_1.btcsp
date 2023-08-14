@@ -1,0 +1,20 @@
+
+var r=85;
+var q=8;
+var temp =0;
+var r_q_compare=0;
+
+set_r_q_compare = [r>=q]set_r_q_compare_s{r_q_compare=1}->Success [] [r<q]set_r_q_compare_f{r_q_compare=0}->Fail ;
+check_r_q_compare = [r_q_compare==1]check_r_q_compare_s->Success [] [r_q_compare==0]check_r_q_compare_f->Fail;
+sub = sub_s{r=r-q}->Success;
+store_r = store_r_s{temp=r}->Success;
+update_r = update_r_s{r=q}->Success;
+update_q = update_q_s{q=temp}->Success;
+
+bt= (set_r_q_compare;check_r_q_compare;sub)|>(store_r;update_r;update_q);
+BT = bt;Success|>Success|>>Success;
+
+BehaviorTree1= Loop.(if(r==1){BT;r_1->Success}else{BT}); 
+BehaviorTree2= Loop.(if(q==0){BT;q_0->Success}else{BT}); 
+#assert BehaviorTree1 |= F r_1;
+#assert BehaviorTree2 |= G F q_0;

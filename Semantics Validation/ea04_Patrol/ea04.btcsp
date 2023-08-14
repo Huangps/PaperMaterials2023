@@ -1,0 +1,14 @@
+﻿var rp =0;
+AtA = [rp==1]AtA_s->Success [] [ rp==0 || rp ==2 || rp ==3]AtA_f->Fail;
+
+GoToA = GoToA_s{rp=1}->Success [] GoToA_f->Fail [] GoToA_r->Running;
+
+AtB = [rp==2]AtB_s->Success [] [ rp==0 || rp ==1 || rp ==3]AtB_f->Fail;
+
+GoToB = GoToB_s{rp=2}->Success [] GoToB_f->Fail [] GoToB_r->Running;
+
+AtC = [rp==3]AtC_s->Success [] [ rp==0 || rp ==1 || rp ==2]AtC_f->Fail;
+
+GoToC = GoToC_s{rp=3}->Success [] GoToC_f->Fail [] GoToC_r->Running;
+BehaviorTree= (AtA|>GoToA);(AtB|>GoToB);(AtC|>GoToC); //     MainBT
+

@@ -1,0 +1,201 @@
+safetycheck0 = safetycheck0_s->Success [] safetycheck0_f->Fail;
+backup0 = backup0_s->Success [] backup0_f->Fail [] backup0_r->Running;
+safetycheck1 = safetycheck1_s->Success [] safetycheck1_f->Fail;
+backup1 = backup1_s->Success [] backup1_f->Fail [] backup1_r->Running;
+safetycheck2 = safetycheck2_s->Success [] safetycheck2_f->Fail;
+backup2 = backup2_s->Success [] backup2_f->Fail [] backup2_r->Running;
+safetycheck3 = safetycheck3_s->Success [] safetycheck3_f->Fail;
+backup3 = backup3_s->Success [] backup3_f->Fail [] backup3_r->Running;
+safetycheck4 = safetycheck4_s->Success [] safetycheck4_f->Fail;
+backup4 = backup4_s->Success [] backup4_f->Fail [] backup4_r->Running;
+
+safetycheck5 = safetycheck5_s->Success [] safetycheck5_f->Fail;
+backup5 = backup5_s->Success [] backup5_f->Fail [] backup5_r->Running;
+safetycheck6 = safetycheck6_s->Success [] safetycheck6_f->Fail;
+backup6 = backup6_s->Success [] backup6_f->Fail [] backup6_r->Running;
+safetycheck7 = safetycheck7_s->Success [] safetycheck7_f->Fail;
+backup7 = backup7_s->Success [] backup7_f->Fail [] backup7_r->Running;
+safetycheck8 = safetycheck8_s->Success [] safetycheck8_f->Fail;
+backup8 = backup8_s->Success [] backup8_f->Fail [] backup8_r->Running;
+safetycheck9 = safetycheck9_s->Success [] safetycheck9_f->Fail;
+backup9 = backup9_s->Success [] backup9_f->Fail [] backup9_r->Running;
+
+
+safetycheck10 = safetycheck10_s->Success [] safetycheck10_f->Fail;
+backup10 = backup10_s->Success [] backup10_f->Fail [] backup10_r->Running;
+safetycheck11 = safetycheck11_s->Success [] safetycheck11_f->Fail;
+backup11 = backup11_s->Success [] backup11_f->Fail [] backup11_r->Running;
+safetycheck12 = safetycheck12_s->Success [] safetycheck12_f->Fail;
+backup12 = backup12_s->Success [] backup12_f->Fail [] backup12_r->Running;
+safetycheck13 = safetycheck13_s->Success [] safetycheck13_f->Fail;
+backup13 = backup13_s->Success [] backup13_f->Fail [] backup13_r->Running;
+safetycheck14 = safetycheck14_s->Success [] safetycheck14_f->Fail;
+backup14 = backup14_s->Success [] backup14_f->Fail [] backup14_r->Running;
+
+safetycheck15 = safetycheck15_s->Success [] safetycheck15_f->Fail;
+backup15 = backup15_s->Success [] backup15_f->Fail [] backup15_r->Running;
+safetycheck16 = safetycheck16_s->Success [] safetycheck16_f->Fail;
+backup16 = backup16_s->Success [] backup16_f->Fail [] backup16_r->Running;
+safetycheck17 = safetycheck17_s->Success [] safetycheck17_f->Fail;
+backup17 = backup17_s->Success [] backup17_f->Fail [] backup17_r->Running;
+safetycheck18 = safetycheck18_s->Success [] safetycheck18_f->Fail;
+backup18 = backup18_s->Success [] backup18_f->Fail [] backup18_r->Running;
+safetycheck19 = safetycheck19_s->Success [] safetycheck19_f->Fail;
+backup19 = backup19_s->Success [] backup19_f->Fail [] backup19_r->Running;
+
+safetycheck20 = safetycheck20_s->Success [] safetycheck20_f->Fail;
+backup20 = backup20_s->Success [] backup20_f->Fail [] backup20_r->Running;
+safetycheck21 = safetycheck21_s->Success [] safetycheck21_f->Fail;
+backup21 = backup21_s->Success [] backup21_f->Fail [] backup21_r->Running;
+safetycheck22 = safetycheck22_s->Success [] safetycheck22_f->Fail;
+backup22 = backup22_s->Success [] backup22_f->Fail [] backup22_r->Running;
+safetycheck23 = safetycheck23_s->Success [] safetycheck23_f->Fail;
+backup23 = backup23_s->Success [] backup23_f->Fail [] backup23_r->Running;
+safetycheck24 = safetycheck24_s->Success [] safetycheck24_f->Fail;
+backup24 = backup24_s->Success [] backup24_f->Fail [] backup24_r->Running;
+safetycheck25 = safetycheck25_s->Success [] safetycheck25_f->Fail;
+backup25 = backup25_s->Success [] backup25_f->Fail [] backup25_r->Running;
+safetycheck26 = safetycheck26_s->Success [] safetycheck26_f->Fail;
+backup26 = backup26_s->Success [] backup26_f->Fail [] backup26_r->Running;
+safetycheck27 = safetycheck27_s->Success [] safetycheck27_f->Fail;
+backup27 = backup27_s->Success [] backup27_f->Fail [] backup27_r->Running;
+safetycheck28 = safetycheck28_s->Success [] safetycheck28_f->Fail;
+backup28 = backup28_s->Success [] backup28_f->Fail [] backup28_r->Running;
+safetycheck29 = safetycheck29_s->Success [] safetycheck29_f->Fail;
+backup29 = backup29_s->Success [] backup29_f->Fail [] backup29_r->Running;
+
+
+
+
+
+F0 = safetycheck0|>backup0;
+F1 = safetycheck1|>backup1;
+F2 = safetycheck2|>backup2;
+F3 = safetycheck3|>backup3;
+F4 = safetycheck4|>backup4;
+F5 = safetycheck5|>backup5;
+F6 = safetycheck6|>backup6;
+F7 = safetycheck7|>backup7;
+F8 = safetycheck8|>backup8;
+F9 = safetycheck9|>backup9;
+F10 = safetycheck10|>backup10;
+F11 = safetycheck11|>backup11;
+F12 = safetycheck12|>backup12;
+F13 = safetycheck13|>backup13;
+F14 = safetycheck14|>backup14;
+F15 = safetycheck15 |> backup15;
+F16 = safetycheck16 |> backup16;
+F17 = safetycheck17 |> backup17;
+F18 = safetycheck18 |> backup18;
+F19 = safetycheck19 |> backup19;
+F20 = safetycheck20 |> backup20;
+F21 = safetycheck21 |> backup21;
+F22 = safetycheck22 |> backup22;
+F23 = safetycheck23 |> backup23;
+F24 = safetycheck24 |> backup24;
+F25 = safetycheck25 |> backup25;
+F26 = safetycheck26 |> backup26;
+F27 = safetycheck27 |> backup27;
+F28 = safetycheck28 |> backup28;
+F29 = safetycheck29 |> backup29;
+
+
+S0 = F0;F1;
+S1 = F2;F3;
+S2 = F4;F5;
+S3 = F6;F7;
+S4 = F8;F9;
+S5 = F10;F11;
+S6 = F12;F13;
+S7 = F14;F15;
+S8 = F16;F17;
+S9 = F18;F19;
+S10 = F20;F21;
+S11 = F22;F23;
+S12 = F24;F25;
+S13 = F26;F27;
+S14 = F28;F29;
+
+
+S15 = S0;S1;
+S16 = S2;S3;
+S17 = S4;S5;
+S18 = S6;S7;
+S19 = S8;S9;
+S20 = S10;S11;
+S21 = S12;S13;
+S22 = S14;S15;
+S23 = S16;S17;
+S24 = S18;S19;
+S25 = S20;S21;
+S26 = S22;S23;
+S27 = S24;S25;
+S28 = S26;S27;
+
+
+
+BehaviorTree= Loop.(S28); 
+
+#assert BehaviorTree |= G(safetycheck0_f->  X(backup0_r || backup0_f || backup0_s));
+#assert BehaviorTree |= G(safetycheck0_f->  !X(backup0_r || backup0_f || backup0_s));
+#assert BehaviorTree |= G(safetycheck1_f -> X(backup1_r || backup1_f || backup1_s));
+#assert BehaviorTree |= G(safetycheck1_f -> !X(backup1_r || backup1_f || backup1_s));
+#assert BehaviorTree |= G(safetycheck2_f -> X(backup2_r || backup2_f || backup2_s));
+#assert BehaviorTree |= G(safetycheck2_f -> !X(backup2_r || backup2_f || backup2_s));
+#assert BehaviorTree |= G(safetycheck3_f -> X(backup3_r || backup3_f || backup3_s));
+#assert BehaviorTree |= G(safetycheck3_f -> !X(backup3_r || backup3_f || backup3_s));
+#assert BehaviorTree |= G(safetycheck4_f -> X(backup4_r || backup4_f || backup4_s));
+#assert BehaviorTree |= G(safetycheck4_f -> !X(backup4_r || backup4_f || backup4_s));
+#assert BehaviorTree |= G(safetycheck5_f -> X(backup5_r || backup5_f || backup5_s));
+#assert BehaviorTree |= G(safetycheck5_f -> !X(backup5_r || backup5_f || backup5_s));
+#assert BehaviorTree |= G(safetycheck6_f -> X(backup6_r || backup6_f || backup6_s));
+#assert BehaviorTree |= G(safetycheck6_f -> !X(backup6_r || backup6_f || backup6_s));
+#assert BehaviorTree |= G(safetycheck7_f -> X(backup7_r || backup7_f || backup7_s));
+#assert BehaviorTree |= G(safetycheck7_f -> !X(backup7_r || backup7_f || backup7_s));
+#assert BehaviorTree |= G(safetycheck8_f -> X(backup8_r || backup8_f || backup8_s));
+#assert BehaviorTree |= G(safetycheck8_f -> !X(backup8_r || backup8_f || backup8_s));
+#assert BehaviorTree |= G(safetycheck9_f -> X(backup9_r || backup9_f || backup9_s));
+#assert BehaviorTree |= G(safetycheck9_f -> !X(backup9_r || backup9_f || backup9_s));
+#assert BehaviorTree |= G(safetycheck10_f -> X(backup10_r || backup10_f || backup10_s));
+#assert BehaviorTree |= G(safetycheck10_f -> !X(backup10_r || backup10_f || backup10_s));
+#assert BehaviorTree |= G(safetycheck11_f -> X(backup11_r || backup11_f || backup11_s));
+#assert BehaviorTree |= G(safetycheck11_f -> !X(backup11_r || backup11_f || backup11_s));
+#assert BehaviorTree |= G(safetycheck12_f -> X(backup12_r || backup12_f || backup12_s));
+#assert BehaviorTree |= G(safetycheck12_f -> !X(backup12_r || backup12_f || backup12_s));
+#assert BehaviorTree |= G(safetycheck13_f -> X(backup13_r || backup13_f || backup13_s));
+#assert BehaviorTree |= G(safetycheck13_f -> !X(backup13_r || backup13_f || backup13_s));
+#assert BehaviorTree |= G(safetycheck14_f -> X(backup14_r || backup14_f || backup14_s));
+#assert BehaviorTree |= G(safetycheck14_f -> !X(backup14_r || backup14_f || backup14_s));
+#assert BehaviorTree |= G(safetycheck15_f -> X(backup15_r || backup15_f || backup15_s));
+#assert BehaviorTree |= G(safetycheck15_f -> !X(backup15_r || backup15_f || backup15_s));
+#assert BehaviorTree |= G(safetycheck16_f -> X(backup16_r || backup16_f || backup16_s));
+#assert BehaviorTree |= G(safetycheck16_f -> !X(backup16_r || backup16_f || backup16_s));
+#assert BehaviorTree |= G(safetycheck17_f -> X(backup17_r || backup17_f || backup17_s));
+#assert BehaviorTree |= G(safetycheck17_f -> !X(backup17_r || backup17_f || backup17_s));
+#assert BehaviorTree |= G(safetycheck18_f -> X(backup18_r || backup18_f || backup18_s));
+#assert BehaviorTree |= G(safetycheck18_f -> !X(backup18_r || backup18_f || backup18_s));
+#assert BehaviorTree |= G(safetycheck19_f -> X(backup19_r || backup19_f || backup19_s));
+#assert BehaviorTree |= G(safetycheck19_f -> !X(backup19_r || backup19_f || backup19_s));
+#assert BehaviorTree |= G(safetycheck20_f -> X(backup20_r || backup20_f || backup20_s));
+#assert BehaviorTree |= G(safetycheck20_f -> !X(backup20_r || backup20_f || backup20_s));
+#assert BehaviorTree |= G(safetycheck21_f -> X(backup21_r || backup21_f || backup21_s));
+#assert BehaviorTree |= G(safetycheck21_f -> !X(backup21_r || backup21_f || backup21_s));
+#assert BehaviorTree |= G(safetycheck22_f -> X(backup22_r || backup22_f || backup22_s));
+#assert BehaviorTree |= G(safetycheck22_f -> !X(backup22_r || backup22_f || backup22_s));
+#assert BehaviorTree |= G(safetycheck23_f -> X(backup23_r || backup23_f || backup23_s));
+#assert BehaviorTree |= G(safetycheck23_f -> !X(backup23_r || backup23_f || backup23_s));
+#assert BehaviorTree |= G(safetycheck24_f -> X(backup24_r || backup24_f || backup24_s));
+#assert BehaviorTree |= G(safetycheck24_f -> !X(backup24_r || backup24_f || backup24_s));
+#assert BehaviorTree |= G(safetycheck25_f -> X(backup25_r || backup25_f || backup25_s));
+#assert BehaviorTree |= G(safetycheck25_f -> !X(backup25_r || backup25_f || backup25_s));
+#assert BehaviorTree |= G(safetycheck26_f -> X(backup26_r || backup26_f || backup26_s));
+#assert BehaviorTree |= G(safetycheck26_f -> !X(backup26_r || backup26_f || backup26_s));
+#assert BehaviorTree |= G(safetycheck27_f -> X(backup27_r || backup27_f || backup27_s));
+#assert BehaviorTree |= G(safetycheck27_f -> !X(backup27_r || backup27_f || backup27_s));
+#assert BehaviorTree |= G(safetycheck28_f -> X(backup28_r || backup28_f || backup28_s));
+#assert BehaviorTree |= G(safetycheck28_f -> !X(backup28_r || backup28_f || backup28_s));
+#assert BehaviorTree |= G(safetycheck29_f -> X(backup29_r || backup29_f || backup29_s));
+#assert BehaviorTree |= G(safetycheck29_f -> !X(backup29_r || backup29_f || backup29_s));
+
+
+

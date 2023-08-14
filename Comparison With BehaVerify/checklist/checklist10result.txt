@@ -1,0 +1,356 @@
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck0_f-> X ( backup0_r|| backup0_f|| backup0_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck0_f-> X ( backup0_r|| backup0_f|| backup0_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0077635s
+Memory Used:8498.608KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck0_f->! X ( backup0_r|| backup0_f|| backup0_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck0_f->! X ( backup0_r|| backup0_f|| backup0_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:2
+Total Transitions:5
+Time Used:0.0016848s
+Memory Used:8517.264KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck1_f-> X ( backup1_r|| backup1_f|| backup1_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck1_f-> X ( backup1_r|| backup1_f|| backup1_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0022259s
+Memory Used:8516.472KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck1_f->! X ( backup1_r|| backup1_f|| backup1_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck1_f->! X ( backup1_r|| backup1_f|| backup1_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:5
+Total Transitions:12
+Time Used:0.0040299s
+Memory Used:8504.528KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck2_f-> X ( backup2_r|| backup2_f|| backup2_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck2_f-> X ( backup2_r|| backup2_f|| backup2_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0045707s
+Memory Used:8517.448KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck2_f->! X ( backup2_r|| backup2_f|| backup2_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck2_f->! X ( backup2_r|| backup2_f|| backup2_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_s -> safetycheck2_f -> backup2_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:9
+Total Transitions:21
+Time Used:0.0027867s
+Memory Used:8516.464KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck3_f-> X ( backup3_r|| backup3_f|| backup3_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck3_f-> X ( backup3_r|| backup3_f|| backup3_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0018725s
+Memory Used:8502.24KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck3_f->! X ( backup3_r|| backup3_f|| backup3_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck3_f->! X ( backup3_r|| backup3_f|| backup3_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_s -> safetycheck2_f -> backup2_s -> safetycheck3_f -> backup3_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:13
+Total Transitions:30
+Time Used:0.0015516s
+Memory Used:8510.12KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck4_f-> X ( backup4_r|| backup4_f|| backup4_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck4_f-> X ( backup4_r|| backup4_f|| backup4_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0021247s
+Memory Used:8510.088KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck4_f->! X ( backup4_r|| backup4_f|| backup4_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck4_f->! X ( backup4_r|| backup4_f|| backup4_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_s -> safetycheck2_f -> backup2_s -> safetycheck3_f -> backup3_s -> safetycheck4_f -> backup4_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:17
+Total Transitions:39
+Time Used:0.0017537s
+Memory Used:8506.144KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck5_f-> X ( backup5_r|| backup5_f|| backup5_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck5_f-> X ( backup5_r|| backup5_f|| backup5_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0018723s
+Memory Used:8505.928KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck5_f->! X ( backup5_r|| backup5_f|| backup5_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck5_f->! X ( backup5_r|| backup5_f|| backup5_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_s -> safetycheck2_f -> backup2_s -> safetycheck3_f -> backup3_s -> safetycheck4_f -> backup4_s -> safetycheck5_f -> backup5_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:21
+Total Transitions:48
+Time Used:0.0017799s
+Memory Used:8513.712KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck6_f-> X ( backup6_r|| backup6_f|| backup6_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck6_f-> X ( backup6_r|| backup6_f|| backup6_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0020298s
+Memory Used:8513.944KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck6_f->! X ( backup6_r|| backup6_f|| backup6_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck6_f->! X ( backup6_r|| backup6_f|| backup6_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_s -> safetycheck2_f -> backup2_s -> safetycheck3_f -> backup3_s -> safetycheck4_f -> backup4_s -> safetycheck5_f -> backup5_s -> safetycheck6_f -> backup6_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:25
+Total Transitions:57
+Time Used:0.0018162s
+Memory Used:8510.928KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck7_f-> X ( backup7_r|| backup7_f|| backup7_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck7_f-> X ( backup7_r|| backup7_f|| backup7_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0020391s
+Memory Used:8512.184KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck7_f->! X ( backup7_r|| backup7_f|| backup7_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck7_f->! X ( backup7_r|| backup7_f|| backup7_s))) is NOT valid.
+A counterexample is presented as follows.
+<init -> safetycheck0_f -> backup0_r -> safetycheck0_s -> safetycheck1_f -> backup1_s -> safetycheck2_f -> backup2_s -> safetycheck3_f -> backup3_s -> safetycheck4_f -> backup4_s -> safetycheck5_f -> backup5_s -> safetycheck6_f -> backup6_s -> safetycheck7_f -> backup7_r>
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:29
+Total Transitions:66
+Time Used:0.0017098s
+Memory Used:8516.304KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck8_f-> X ( backup8_r|| backup8_f|| backup8_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck8_f-> X ( backup8_r|| backup8_f|| backup8_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0021949s
+Memory Used:8517.448KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck8_f->! X ( backup8_r|| backup8_f|| backup8_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck8_f->! X ( backup8_r|| backup8_f|| backup8_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0017891s
+Memory Used:8507.544KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck9_f-> X ( backup9_r|| backup9_f|| backup9_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck9_f-> X ( backup9_r|| backup9_f|| backup9_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0018931s
+Memory Used:8510.344KB
+=======================================================
+Assertion: BehaviorTree() |= G ( safetycheck9_f->! X ( backup9_r|| backup9_f|| backup9_s))
+********Verification Result********
+The Assertion (BehaviorTree() |= G ( safetycheck9_f->! X ( backup9_r|| backup9_f|| backup9_s))) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Method: Refinement Based Safety Analysis using DFS - The LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:41
+Total Transitions:90
+Time Used:0.0018083s
+Memory Used:8513.304KB

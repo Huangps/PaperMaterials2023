@@ -1,0 +1,19 @@
+Source State: [0] -----init-----> Target State: [1] 
+Target State: The process is:
+Fallback()
+10
+
+
+Source State: [1] -----Condition_s-----> Target State: [2] 
+Target State: The process is:
+Success|>Action()
+12
+
+
+Source State: [2] -----✔-----> Target State: [3] 
+Target State: The process is:
+Stop|>Action()
+13
+
+
+

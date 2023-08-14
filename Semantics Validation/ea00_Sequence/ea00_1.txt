@@ -1,0 +1,26 @@
+Source State: [0] -----init-----> Target State: [1] 
+Target State: The process is:
+Sequence()
+10
+
+
+Source State: [1] -----Condition_s-----> Target State: [2] 
+Target State: The process is:
+Success;
+Action()
+8
+
+
+Source State: [2] -----Action_s-----> Target State: [3] 
+Target State: The process is:
+Success
+✔
+
+
+Source State: [3] -----✔-----> Target State: [4] 
+Target State: The process is:
+Stop
+STOP
+
+
+

@@ -1,0 +1,4 @@
+﻿Condition= Condition_f->Fail []  Condition_s->Success;
+Action= Action_f->Fail []  Action_s->Success[] Action_r->Running;
+
+Sequence = Condition;Action;

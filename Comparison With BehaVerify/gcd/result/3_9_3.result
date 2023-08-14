@@ -1,0 +1,33 @@
+=======================================================
+Assertion: BehaviorTree1() |= F r_3
+********Verification Result********
+The Assertion (BehaviorTree1() |= F r_3) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Loop Existence Checking - The negation of the LTL formula is a safety property!
+System Abstraction: False
+
+
+********Verification Statistics********
+
+Visited States:6
+Total Transitions:6
+Time Used:0.0085332s
+Memory Used:8493.48KB
+=======================================================
+Assertion: BehaviorTree2() |= G F q_0
+********Verification Result********
+The Assertion (BehaviorTree2() |= G F q_0) is VALID.
+
+********Verification Setting********
+Admissible Behavior: All
+Search Engine: Strongly Connected Component Based Search
+
+
+********Verification Statistics********
+
+Visited States:57
+Total Transitions:84
+Time Used:0.0046661s
+Memory Used:41205.288KB

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<root deadline_time="" global_vars="" main_tree_to_execute="BehaviorTree" specification="">
+    <!-- ////////// -->
+    <BehaviorTree ID="BehaviorTree">
+        <Fallback name="gcd_root">
+            <Sequence name="subtract_seq">
+                <Action ID="set_r_q_compare" failure_program="r_q_compare=0" name="set_comparison_value" running_program="r_q_compare=0" success_guard="r&gt;=q" success_program="r_q_compare=1"/>
+                <Condition ID="check_r_q_compare" failure_guard="r_q_compare==0" success_guard="r_q_compare==1"/>
+                <Action ID="sub" SuccessThreshold="1" success_program="r=r-q"/>
+            </Sequence>
+            <Sequence name="swap_seq">
+                <Action ID="store_r" SuccessThreshold="1" success_program="temp=r"/>
+                <Action ID="update_r" SuccessThreshold="1" success_program="r=q"/>
+                <Action ID="update_q" SuccessThreshold="1" success_program="q=temp"/>
+            </Sequence>
+        </Fallback>
+    </BehaviorTree>
+    <!-- ////////// -->
+    <TreeNodesModel>
+        <Condition ID="check_r_q_compare">
+            <inout_port name="failure_guard"/>
+            <inout_port name="success_guard"/>
+        </Condition>
+        <Action ID="set_r_q_compare">
+            <inout_port name="failure_program"/>
+            <inout_port name="running_program"/>
+            <inout_port name="success_guard"/>
+            <inout_port name="success_program"/>
+        </Action>
+        <Action ID="store_r">
+            <inout_port name="SuccessThreshold"/>
+            <inout_port name="success_program"/>
+        </Action>
+        <Action ID="sub">
+            <inout_port name="SuccessThreshold"/>
+            <inout_port name="success_program"/>
+        </Action>
+        <Action ID="update_q">
+            <inout_port name="SuccessThreshold"/>
+            <inout_port name="success_program"/>
+        </Action>
+        <Action ID="update_r">
+            <inout_port name="SuccessThreshold"/>
+            <inout_port name="success_program"/>
+        </Action>
+    </TreeNodesModel>
+    <!-- ////////// -->
+</root>
